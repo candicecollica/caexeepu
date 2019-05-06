@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://ootheemai.java9.wtf/sitemap.xml
